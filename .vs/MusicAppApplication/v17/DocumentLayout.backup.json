@@ -1,7 +1,112 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "T:\\NET prog\\MusicAppApplication\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01E3955D-DADC-440A-899E-8661EFF883AE}|MusicApp.Business\\MusicApp.Business.csproj|t:\\net prog\\musicappapplication\\musicapp.business\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E3955D-DADC-440A-899E-8661EFF883AE}|MusicApp.Business\\MusicApp.Business.csproj|solutionrelative:musicapp.business\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|t:\\net prog\\musicappapplication\\musicapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|t:\\net prog\\musicappapplication\\musicapp.data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|solutionrelative:musicapp.data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|t:\\net prog\\musicappapplication\\musicapp.data\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|solutionrelative:musicapp.data\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|t:\\net prog\\musicappapplication\\musicapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E3955D-DADC-440A-899E-8661EFF883AE}|MusicApp.Business\\MusicApp.Business.csproj|t:\\net prog\\musicappapplication\\musicapp.business\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E3955D-DADC-440A-899E-8661EFF883AE}|MusicApp.Business\\MusicApp.Business.csproj|solutionrelative:musicapp.business\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|t:\\net prog\\musicappapplication\\musicapp\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\response\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\response\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\request\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\request\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\response\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\response\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\request\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\request\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|t:\\net prog\\musicappapplication\\musicapp.data\\migrations\\20250309094526_initalwithdbmusicapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|solutionrelative:musicapp.data\\migrations\\20250309094526_initalwithdbmusicapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|t:\\net prog\\musicappapplication\\musicapp.data\\data\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|solutionrelative:musicapp.data\\data\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|t:\\net prog\\musicappapplication\\musicapp\\musicapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\musicapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|t:\\net prog\\musicappapplication\\musicapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1A990344-3326-47F4-A4FF-4506CA14BEE9}|MusicApp\\MusicApp.csproj|solutionrelative:musicapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01E3955D-DADC-440A-899E-8661EFF883AE}|MusicApp.Business\\MusicApp.Business.csproj|t:\\net prog\\musicappapplication\\musicapp.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01E3955D-DADC-440A-899E-8661EFF883AE}|MusicApp.Business\\MusicApp.Business.csproj|solutionrelative:musicapp.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|t:\\net prog\\musicappapplication\\musicapp.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04FEF1C0-716E-468A-8D7D-709B1AEF1008}|MusicApp.Data\\MusicApp.Data.csproj|solutionrelative:musicapp.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\wishlistsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\wishlistsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\playlistsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\playlistsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\friendship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\friendship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\favoritesong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\favoritesong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|t:\\net prog\\musicappapplication\\musicapp.domain\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE73157-A3D9-459E-88DB-72723921E92E}|MusicApp.Domain\\MusicApp.Domain.csproj|solutionrelative:musicapp.domain\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +114,345 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "MusicApp\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "MusicApp\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:29:36.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MusicApp\\Controllers\\AccountController.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MusicApp\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:29:04.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Business\\AccountService.cs",
+              "RelativeDocumentMoniker": "MusicApp.Business\\AccountService.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Business\\AccountService.cs*",
+              "RelativeToolTip": "MusicApp.Business\\AccountService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:23:19.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Business\\Services\\IAccountService.cs",
+              "RelativeDocumentMoniker": "MusicApp.Business\\Services\\IAccountService.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Business\\Services\\IAccountService.cs",
+              "RelativeToolTip": "MusicApp.Business\\Services\\IAccountService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:18:05.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp\\Program.cs",
+              "RelativeDocumentMoniker": "MusicApp\\Program.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp\\Program.cs",
+              "RelativeToolTip": "MusicApp\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:06:33.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Repository.cs",
+              "RelativeDocumentMoniker": "MusicApp.Data\\Repository.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Repository.cs",
+              "RelativeToolTip": "MusicApp.Data\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:24:55.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Repository\\IRepository.cs",
+              "RelativeDocumentMoniker": "MusicApp.Data\\Repository\\IRepository.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Repository\\IRepository.cs",
+              "RelativeToolTip": "MusicApp.Data\\Repository\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:23:51.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OperationResult.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Response\\OperationResult.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\Response\\OperationResult.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Response\\OperationResult.cs",
+              "RelativeToolTip": "MusicApp.Domain\\Response\\OperationResult.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:22:18.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Request\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\Request\\LoginRequestDto.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Request\\LoginRequestDto.cs",
+              "RelativeToolTip": "MusicApp.Domain\\Request\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:20:09.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserResponseDto.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Response\\UserResponseDto.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\Response\\UserResponseDto.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Response\\UserResponseDto.cs",
+              "RelativeToolTip": "MusicApp.Domain\\Response\\UserResponseDto.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:17:21.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Request\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\Request\\RegisterRequestDto.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Request\\RegisterRequestDto.cs",
+              "RelativeToolTip": "MusicApp.Domain\\Request\\RegisterRequestDto.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:16:22.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250309094526_InitalwithDbMusicApplication.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Migrations\\20250309094526_InitalwithDbMusicApplication.cs",
+              "RelativeDocumentMoniker": "MusicApp.Data\\Migrations\\20250309094526_InitalwithDbMusicApplication.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Migrations\\20250309094526_InitalwithDbMusicApplication.cs",
+              "RelativeToolTip": "MusicApp.Data\\Migrations\\20250309094526_InitalwithDbMusicApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:45:26.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MusicApp",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp\\MusicApp.csproj",
+              "RelativeDocumentMoniker": "MusicApp\\MusicApp.csproj",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp\\MusicApp.csproj",
+              "RelativeToolTip": "MusicApp\\MusicApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-09T09:36:30.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp\\appsettings.json",
+              "RelativeDocumentMoniker": "MusicApp\\appsettings.json",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp\\appsettings.json",
+              "RelativeToolTip": "MusicApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-09T09:06:36.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\AppUser.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\AppUser.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\AppUser.cs",
+              "RelativeToolTip": "MusicApp.Domain\\AppUser.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAcwDEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T07:47:18.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext .cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Data\\AppDbContext .cs",
+              "RelativeDocumentMoniker": "MusicApp.Data\\Data\\AppDbContext .cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Data\\AppDbContext .cs",
+              "RelativeToolTip": "MusicApp.Data\\Data\\AppDbContext .cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwDMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:52:19.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Business\\Class1.cs",
+              "RelativeDocumentMoniker": "MusicApp.Business\\Class1.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Business\\Class1.cs",
+              "RelativeToolTip": "MusicApp.Business\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:04:04.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Class1.cs",
+              "RelativeDocumentMoniker": "MusicApp.Data\\Class1.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Data\\Class1.cs",
+              "RelativeToolTip": "MusicApp.Data\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:51:27.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Friendship.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Friendship.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\Friendship.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Friendship.cs",
+              "RelativeToolTip": "MusicApp.Domain\\Friendship.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:25:35.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WishlistSong.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\WishlistSong.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\WishlistSong.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\WishlistSong.cs",
+              "RelativeToolTip": "MusicApp.Domain\\WishlistSong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:24:39.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FavoriteSong.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\FavoriteSong.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\FavoriteSong.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\FavoriteSong.cs",
+              "RelativeToolTip": "MusicApp.Domain\\FavoriteSong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:23:55.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PlaylistSong.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\PlaylistSong.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\PlaylistSong.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\PlaylistSong.cs",
+              "RelativeToolTip": "MusicApp.Domain\\PlaylistSong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:23:12.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\ChatMessage.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\ChatMessage.cs",
+              "RelativeToolTip": "MusicApp.Domain\\ChatMessage.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:26:07.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Playlist.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Playlist.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\Playlist.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Playlist.cs",
+              "RelativeToolTip": "MusicApp.Domain\\Playlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:22:34.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Song.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Song.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\Song.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Song.cs",
+              "RelativeToolTip": "MusicApp.Domain\\Song.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:21:37.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "MusicApp.Domain\\Class1.cs",
+              "ToolTip": "T:\\NET prog\\MusicAppApplication\\MusicApp.Domain\\Class1.cs",
+              "RelativeToolTip": "MusicApp.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T07:03:46.55Z",
+              "EditorCaption": ""
             }
           ]
         }
