@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MusicApp/bin/Debug/net8.0
+/MusicApp.Business/obj
+/MusicApp.Business/bin/Debug/net8.0
+/MusicApp.Business/Services/IAccountService.cs
+/MusicApp.Data/bin/Debug/net8.0
+/MusicApp.Data/obj
+/MusicApp.Domain/bin/Debug/net8.0
+/MusicApp.Domain/obj
+/MusicApp.Domain/obj/Debug/net8.0/ref/MusicApp.Domain.dll
+/MusicApp/obj/Debug/net8.0/EndpointInfo
+/MusicApp/obj/Debug/net8.0/ref
+/MusicApp/obj/Debug/net8.0/ref/MusicApp.dll
+/MusicApp/obj/Debug/net8.0/refint
+/MusicApp/obj/Debug/net8.0/staticwebassets
