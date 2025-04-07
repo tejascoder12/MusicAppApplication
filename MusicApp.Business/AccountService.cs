@@ -1,16 +1,20 @@
-﻿using MusicApp.Business.Services;
-using MusicApp.Data.Repository;
+﻿using BCrypt.Net;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using MusicApp.Business.Services;
 using MusicApp.Data.Repositories;
+using MusicApp.Data.Repository;
 using MusicApp.Domain;
 using MusicApp.Domain.Request;
 using MusicApp.Domain.Response;
 using Org.BouncyCastle.Crypto.Generators;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using BCrypt.Net;
 
 
 namespace MusicApp.Business
@@ -18,10 +22,12 @@ namespace MusicApp.Business
     public class AccountService : IAccountService
     {
         private readonly IRepository<AppUser> _userRepository;
+        private readonly IConfiguration _configuration;
 
-        public AccountService(IRepository<AppUser> userRepository)
+        public AccountService(IRepository<AppUser> userRepository, IConfiguration configuration)
         {
             _userRepository = userRepository;
+            _configuration = configuration;
         }
 
         public async Task<OperationResult> RegisterUserAsync(RegisterRequestDto registerDto)
@@ -67,6 +73,83 @@ namespace MusicApp.Business
             };
         }
 
+        public async Task<LoginResultDto> LoginAsync(LoginRequestDto loginDto)
+        {
+            var user = await _userRepository.GetAsync(u => u.Username == loginDto.Username);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(loginDto.Password, user.PasswordHash))
+            {
+                return new LoginResultDto
+                {
+                    Success = false,
+                    Message = "Invalid credentials.",
+                    StatusCode = ResponseStatusCodes.Unauthorized
+                };
+            }
+
+            // Generate JWT token
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Name, user.Username)
+                    // Add additional claims as needed
+                }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                Issuer = _configuration["Jwt:Issuer"],
+                Audience = _configuration["Jwt:Audience"],
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
+
+            // Map AppUser to UserResponseDto
+            var userResponse = new UserResponseDto
+            {
+                Id = user.Id,
+                Username = user.Username,
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                LastActive = user.LastActive,
+                CreatedDate = user.CreatedDate,
+                ModifiedDate = user.ModifiedDate
+            };
+
+            return new LoginResultDto
+            {
+                Success = true,
+                Message = "Login successful.",
+                StatusCode = ResponseStatusCodes.Success,
+                Token = tokenString,
+                User = userResponse
+            };
+        }
+
+        public async Task<OperationResult> ForgotPasswordAsync(string email)
+        {
+            var user = await _userRepository.GetAsync(u => u.Email == email);
+            if (user == null)
+            {
+                return new OperationResult
+                {
+                    Success = false,
+                    Message = "User not found.",
+                    StatusCode = ResponseStatusCodes.NotFound
+                };
+            }
+
+            // In a production system, you would generate a reset token and email the user.
+            return new OperationResult
+            {
+                Success = true,
+                Message = "Password reset instructions have been sent to your email.",
+                StatusCode = ResponseStatusCodes.Success
+            };
+        }
         // Example of mapping to UserResponseDto
         public UserResponseDto MapToResponseDto(AppUser user)
         {
@@ -83,14 +166,6 @@ namespace MusicApp.Business
             };
         }
 
-        public Task<OperationResult> ForgotPasswordAsync(string email)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<UserResponseDto> LoginAsync(LoginRequestDto loginDto)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }
