@@ -12,6 +12,7 @@ namespace MusicApp.Domain.Response
         public string Message { get; set; }
         // Added status code property to represent HTTP or custom status codes
         public int StatusCode { get; set; }
+
     }
 
     public static class ResponseStatusCodes
