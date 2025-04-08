@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MusicApp.Business;
 using MusicApp.Business.Services;
 using MusicApp.Domain.Request;
-using MusicApp.Domain.Response;
-using MusicApp.Domain;
-using System.Threading.Tasks;
 namespace MusicApp.Controllers
 {
     [ApiController]
