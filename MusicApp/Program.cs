@@ -1,8 +1,10 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using MusicApp.Business;
 using MusicApp.Business.Services;
+using MusicApp.Business.Services.Token;
 using MusicApp.Data;
 using MusicApp.Data.Repositories;
 using MusicApp.Data.Repository; // Adjust namespace if needed
@@ -22,6 +24,10 @@ builder.Services.AddControllers();
 
 // Register business services
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<ITokenGenerator, TokenGenerator>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddSingleton<ITokenBlacklistService, InMemoryTokenBlacklistService>();
+
 
 // Register the generic repository. Adjust the namespace if necessary.
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
@@ -37,6 +43,7 @@ builder.Services.AddAuthentication(options =>
 })
 .AddJwtBearer(options =>
 {
+    options.SaveToken = true;
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuer = true,
@@ -48,7 +55,24 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ClockSkew = TimeSpan.Zero
     };
+
+    // ✅ Add this to check for blacklisted tokens
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            var token = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            var blacklistService = context.HttpContext.RequestServices.GetRequiredService<ITokenBlacklistService>();
+            if (blacklistService.IsTokenBlacklisted(token))
+            {
+                context.Fail("Token is blacklisted.");
+            }
+            return Task.CompletedTask;
+        }
+    };
 });
+
+
 
 builder.Services.AddAuthorization();
 

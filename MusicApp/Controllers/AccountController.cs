@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MusicApp.Business.Services;
+using MusicApp.Business.Services.Token;
 using MusicApp.Domain.Request;
+using System.IdentityModel.Tokens.Jwt;
 namespace MusicApp.Controllers
 {
     [ApiController]
@@ -42,12 +44,21 @@ namespace MusicApp.Controllers
         // POST: api/account/logout
         [Authorize]
         [HttpPost("logout")]
-        public IActionResult Logout()
+        public IActionResult Logout([FromServices] ITokenBlacklistService blacklistService)
         {
-            // In JWT-based authentication, logout is generally handled on the client side by removing the token.
-            // If you implement token revocation, add that logic here.
-            return Ok("Logout successful. Please remove your token on the client side.");
+            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            if (!string.IsNullOrEmpty(token))
+            {
+                var handler = new JwtSecurityTokenHandler();
+                var jwtToken = handler.ReadToken(token) as JwtSecurityToken;
+                var expiry = jwtToken?.ValidTo ?? DateTime.UtcNow.AddMinutes(60); // fallback to 1 hour
+
+                blacklistService.BlacklistToken(token, expiry);
+            }
+
+            return Ok("Logout successful. Token invalidated.");
         }
+
 
         // POST: api/account/forgotpassword
         [HttpPost("forgotpassword")]

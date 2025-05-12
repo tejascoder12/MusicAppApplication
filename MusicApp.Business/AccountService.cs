@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using MusicApp.Business.Services;
+using MusicApp.Business.Services.Token;
 using MusicApp.Data.Repositories;
 using MusicApp.Data.Repository;
 using MusicApp.Domain;
@@ -23,11 +24,13 @@ namespace MusicApp.Business
     {
         private readonly IRepository<AppUser> _userRepository;
         private readonly IConfiguration _configuration;
+        private readonly ITokenService _tokenservice;
 
-        public AccountService(IRepository<AppUser> userRepository, IConfiguration configuration)
+        public AccountService(IRepository<AppUser> userRepository, IConfiguration configuration,ITokenService tokenService)
         {
             _userRepository = userRepository;
             _configuration = configuration;
+            _tokenservice = tokenService;
         }
 
         public async Task<OperationResult> RegisterUserAsync(RegisterRequestDto registerDto)
@@ -73,6 +76,61 @@ namespace MusicApp.Business
             };
         }
 
+        //public async Task<LoginResultDto> LoginAsync(LoginRequestDto loginDto)
+        //{
+        //    var user = await _userRepository.GetAsync(u => u.Username == loginDto.Username);
+        //    if (user == null || !BCrypt.Net.BCrypt.Verify(loginDto.Password, user.PasswordHash))
+        //    {
+        //        return new LoginResultDto
+        //        {
+        //            Success = false,
+        //            Message = "Invalid credentials.",
+        //            StatusCode = ResponseStatusCodes.Unauthorized
+        //        };
+        //    }
+
+        //    // Generate JWT token
+        //    var tokenHandler = new JwtSecurityTokenHandler();
+        //    var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+        //    var tokenDescriptor = new SecurityTokenDescriptor
+        //    {
+        //        Subject = new ClaimsIdentity(new Claim[]
+        //        {
+        //         new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+        //        new Claim(ClaimTypes.Name, user.Username)
+        //            // Add additional claims as needed
+        //        }),
+        //        Expires = DateTime.UtcNow.AddHours(1),
+        //        Issuer = _configuration["Jwt:Issuer"],
+        //        Audience = _configuration["Jwt:Audience"],
+        //        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+        //    };
+
+        //    var token = tokenHandler.CreateToken(tokenDescriptor);
+        //    var tokenString = tokenHandler.WriteToken(token);
+
+        //    // Map AppUser to UserResponseDto
+        //    var userResponse = new UserResponseDto
+        //    {
+        //        Id = user.Id,
+        //        Username = user.Username,
+        //        Email = user.Email,
+        //        FirstName = user.FirstName,
+        //        LastName = user.LastName,
+        //        LastActive = user.LastActive,
+        //        CreatedDate = user.CreatedDate,
+        //        ModifiedDate = user.ModifiedDate
+        //    };
+
+        //    return new LoginResultDto
+        //    {
+        //        Success = true,
+        //        Message = "Login successful.",
+        //        StatusCode = ResponseStatusCodes.Success,
+        //        Token = tokenString,
+        //        User = userResponse
+        //    };
+        //}
         public async Task<LoginResultDto> LoginAsync(LoginRequestDto loginDto)
         {
             var user = await _userRepository.GetAsync(u => u.Username == loginDto.Username);
@@ -86,27 +144,8 @@ namespace MusicApp.Business
                 };
             }
 
-            // Generate JWT token
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.Username)
-                    // Add additional claims as needed
-                }),
-                Expires = DateTime.UtcNow.AddHours(1),
-                Issuer = _configuration["Jwt:Issuer"],
-                Audience = _configuration["Jwt:Audience"],
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
+            var tokenString = _tokenservice.GetToken(user, _configuration["Jwt:Audience"]);
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
-
-            // Map AppUser to UserResponseDto
             var userResponse = new UserResponseDto
             {
                 Id = user.Id,
@@ -128,6 +167,7 @@ namespace MusicApp.Business
                 User = userResponse
             };
         }
+
 
         public async Task<OperationResult> ForgotPasswordAsync(string email)
         {
