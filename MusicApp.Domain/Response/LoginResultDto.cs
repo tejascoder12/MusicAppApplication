@@ -10,5 +10,7 @@ namespace MusicApp.Domain.Response
     {
         public string Token { get; set; }
         public UserResponseDto User { get; set; }
+
+        public int ExpiresIn { get; set; }
     }
 }
